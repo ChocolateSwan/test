@@ -1,0 +1,30 @@
+{% extends 'base_page.html' %}
+
+{% block title %}
+    Lab_7_RIP
+{% endblock %}
+
+{% block head %}
+    Вход
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <form ​ method= ​"POST">
+            {% csrf_token ​%}
+            <label>
+                Логин:
+                <input type="text" ​ name="username">
+            </label>
+            <br>
+            <label>
+                Пароль:
+                <input type="password" ​ name="password">
+            </label>
+            <br>
+            <button ​ type="submit"> ​ Зарегистрировать​ </button>
+        </form>
+    </div>
+
+{% endblock %}
